@@ -1,0 +1,205 @@
+.workout-day {
+  animation: fadeIn 0.5s ease-in;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.workout-header {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.workout-header h1 {
+  font-size: 2.5rem;
+  color: #667eea;
+  margin-bottom: 0.5rem;
+}
+
+.workout-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.workout-meta {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.workout-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.workout-section h2 {
+  color: #667eea;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 0.5rem;
+}
+
+.exercise-list {
+  list-style: none;
+  padding: 0;
+}
+
+.exercise-list li {
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #667eea;
+}
+
+.skill-section {
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+}
+
+.skill-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid #667eea;
+}
+
+.skill-card h3 {
+  color: #667eea;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.skill-levels {
+  margin-bottom: 1rem;
+}
+
+.skill-level {
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.skill-cues {
+  padding: 0.75rem;
+  background: #e3f2fd;
+  border-radius: 6px;
+  font-style: italic;
+}
+
+.exercise-category {
+  margin-bottom: 2rem;
+}
+
+.exercise-category h3 {
+  color: #764ba2;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.exercise-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #667eea;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.exercise-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.exercise-sets {
+  color: #667eea;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.exercise-options {
+  color: #666;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.exercise-critical {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: #fff3cd;
+  border-radius: 4px;
+  color: #856404;
+  font-weight: 600;
+  border-left: 3px solid #ffc107;
+}
+
+.cues-section {
+  background: linear-gradient(135deg, #feca5715 0%, #ff9ff315 100%);
+}
+
+.cues-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.cues-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 2px solid #feca57;
+}
+
+.cues-card h3 {
+  color: #feca57;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.cues-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cues-card li {
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background: #fff9e6;
+  border-radius: 6px;
+  border-left: 3px solid #feca57;
+}
+
+@media (max-width: 768px) {
+  .workout-header h1 {
+    font-size: 2rem;
+  }
+  
+  .workout-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .cues-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

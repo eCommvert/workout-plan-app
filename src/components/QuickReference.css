@@ -1,0 +1,227 @@
+.quick-reference {
+  animation: fadeIn 0.5s ease-in;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.ref-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.ref-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.ref-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.ref-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ref-section h2 {
+  color: #667eea;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 0.5rem;
+}
+
+.cues-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.cue-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border-left: 4px solid #667eea;
+}
+
+.cue-card h3 {
+  color: #667eea;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.cue-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cue-card li {
+  padding: 0.5rem 0;
+  color: #666;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.cue-card li:last-child {
+  border-bottom: none;
+}
+
+.equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.equipment-card {
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.equipment-card.essential {
+  background: #e3f2fd;
+  border: 2px solid #2196f3;
+}
+
+.equipment-card.optional {
+  background: #f3e5f5;
+  border: 2px solid #9c27b0;
+}
+
+.equipment-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.equipment-card.essential h3 {
+  color: #1976d2;
+}
+
+.equipment-card.optional h3 {
+  color: #7b1fa2;
+}
+
+.equipment-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.equipment-card li {
+  padding: 0.5rem 0;
+  color: #666;
+}
+
+.adjustment-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.adjustment-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 2px solid #667eea;
+}
+
+.adjustment-card h3 {
+  color: #667eea;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.do-dont {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.do {
+  background: #e8f5e9;
+  padding: 1rem;
+  border-radius: 6px;
+  border-left: 3px solid #4caf50;
+}
+
+.dont {
+  background: #fff3e0;
+  padding: 1rem;
+  border-radius: 6px;
+  border-left: 3px solid #ff9800;
+}
+
+.do strong {
+  color: #2e7d32;
+}
+
+.dont strong {
+  color: #e65100;
+}
+
+.do ul, .dont ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+.do li, .dont li {
+  padding: 0.25rem 0;
+  color: #666;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.tip-card {
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 2px solid #667eea;
+}
+
+.tip-card h3 {
+  color: #667eea;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.tip-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.priority-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.priority-item {
+  background: #f8f9fa;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .ref-header h1 {
+    font-size: 2rem;
+  }
+  
+  .cues-cards,
+  .equipment-grid,
+  .adjustment-cards,
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
