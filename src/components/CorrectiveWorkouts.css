@@ -1,0 +1,252 @@
+.corrective-workouts {
+  animation: fadeIn 0.5s ease-in;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.corrective-header {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.corrective-header h1 {
+  font-size: 2.5rem;
+  color: #667eea;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.workout-meta {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 1rem;
+}
+
+.workout-selector {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.workout-btn {
+  flex: 1;
+  min-width: 150px;
+  padding: 1.5rem;
+  border: 2px solid #667eea;
+  background: white;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #667eea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.workout-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.3);
+}
+
+.workout-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.btn-subtitle {
+  font-size: 0.85rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.workout-content {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.workout-title-section {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #667eea;
+}
+
+.workout-title-section h2 {
+  font-size: 1.8rem;
+  color: #667eea;
+  margin-bottom: 0.5rem;
+}
+
+.workout-theme {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.workout-duration {
+  font-size: 1rem;
+  color: #888;
+  font-weight: 600;
+}
+
+.workout-section {
+  margin-bottom: 2rem;
+}
+
+.workout-section h3 {
+  color: #667eea;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  border-left: 4px solid #667eea;
+  padding-left: 1rem;
+}
+
+.exercise-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.exercise-item {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.25rem;
+  border-left: 4px solid #667eea;
+  transition: transform 0.2s ease;
+}
+
+.exercise-item:hover {
+  transform: translateX(5px);
+}
+
+.main-exercise {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border-left: 4px solid #764ba2;
+}
+
+.cooldown-item {
+  background: #e3f2fd;
+  border-left: 4px solid #2196f3;
+}
+
+.exercise-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.exercise-name {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.exercise-sets {
+  color: #667eea;
+  font-weight: 600;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.exercise-details {
+  color: #666;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.exercise-focus {
+  background: #e8f5e9;
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin-top: 0.75rem;
+  color: #2e7d32;
+  font-weight: 500;
+  border-left: 3px solid #4caf50;
+}
+
+.exercise-note {
+  background: #fff3cd;
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+  color: #856404;
+  font-weight: 600;
+  border-left: 3px solid #ffc107;
+}
+
+.exercise-zone {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #888;
+  font-style: italic;
+}
+
+.rotation-info {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 2px solid #667eea;
+}
+
+.rotation-info h3 {
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+.rotation-info p {
+  margin-bottom: 0.75rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .corrective-header h1 {
+    font-size: 2rem;
+  }
+  
+  .workout-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .workout-selector {
+    flex-direction: column;
+  }
+  
+  .workout-btn {
+    width: 100%;
+  }
+  
+  .exercise-header {
+    flex-direction: column;
+  }
+}
+

@@ -6,6 +6,7 @@ import PullDay from './components/PullDay'
 import LegsDay from './components/LegsDay'
 import SkillsProgression from './components/SkillsProgression'
 import QuickReference from './components/QuickReference'
+import CorrectiveWorkouts from './components/CorrectiveWorkouts'
 
 function App() {
   const [currentView, setCurrentView] = useState('dashboard')
@@ -15,6 +16,7 @@ function App() {
     { id: 'push', label: '💪 Push Day', icon: '💪' },
     { id: 'pull', label: '🏋️ Pull Day', icon: '🏋️' },
     { id: 'legs', label: '🦵 Legs Day', icon: '🦵' },
+    { id: 'corrective', label: '🔄 Corrective', icon: '🔄' },
     { id: 'skills', label: '⭐ Skills', icon: '⭐' },
     { id: 'reference', label: '📖 Reference', icon: '📖' },
   ]
@@ -29,6 +31,8 @@ function App() {
         return <PullDay />
       case 'legs':
         return <LegsDay />
+      case 'corrective':
+        return <CorrectiveWorkouts />
       case 'skills':
         return <SkillsProgression />
       case 'reference':
